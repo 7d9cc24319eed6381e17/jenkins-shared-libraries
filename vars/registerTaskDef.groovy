@@ -10,8 +10,8 @@
   */
 def call(String taskDefFile, String region) {
     return """ 
-        aws ecs register-task-definition \\
-            --cli-input-json file://${taskDefFile} \\
+        aws ecs register-task-definition \
+            --cli-input-json file://${taskDefFile} \
             --region ${region}
     """
 }
