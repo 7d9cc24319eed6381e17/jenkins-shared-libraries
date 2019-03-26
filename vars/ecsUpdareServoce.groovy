@@ -9,7 +9,7 @@
   * @return generated command as String.
   */
 def call(String appName, String region, String cluster, String arn) {
-    return """ 
+    return """ \\
         aws ecs update-service \
             --cluster ${cluster} \
             --service ${appName} \

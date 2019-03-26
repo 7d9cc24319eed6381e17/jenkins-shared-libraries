@@ -9,7 +9,7 @@
   * @return generated command as String.
   */
 def call(String taskDefFile, String region) {
-    return """ 
+    return """ \\
         aws ecs register-task-definition \
             --cli-input-json file://${taskDefFile} \
             --region ${region}
